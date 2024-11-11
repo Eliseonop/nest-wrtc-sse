@@ -14,9 +14,11 @@
 // }
 
 export interface HaveEventData {
-  clientOrigin?: string
-  clientDestiny?: string
-  rtc: RTCSessionDescriptionInit
+  clientOrigin?: string;
+  clientDestiny?: string;
+  rtc: RTCSessionDescriptionInit;
+  type?: string;
+  candidates?: RTCIceCandidate[];
 }
 
 // export interface Offer {
